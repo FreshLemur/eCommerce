@@ -1,0 +1,44 @@
+:root {
+  --background-color-light: #ffffff;
+  --text-color-light: #000000;
+  --button-background-light: #ffffff;
+  --button-text-light: #000000;
+  --button-border-light: #000000;
+
+  --background-color-dark: #000000;
+  --text-color-dark: #ffffff;
+  --button-background-dark: #000000;
+  --button-text-dark: #ffffff;
+  --button-border-dark: #ffffff;
+}
+
+.lightTheme {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.darkTheme {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--button-background-hover);
+}
+
+.lightTheme .button {
+  background-color: var(--button-background-light);
+  color: var(--button-text-light);
+  border: 2px solid var(--button-border-light);
+}
+
+.darkTheme .button {
+  background-color: var(--button-background-dark);
+  color: var(--button-text-dark);
+  border: 2px solid var(--button-border-dark);
+}
