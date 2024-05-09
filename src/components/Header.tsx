@@ -5,7 +5,7 @@ import phoneIcon from "../assets/svg/phoneIcon.svg";
 const Header = () => {
   return (
     <header className={styles.header}>
-      {/* left section */}
+      {/* start left section */}
       <section className={styles.leftSection}>
         <section>
           <ul>
@@ -24,14 +24,18 @@ const Header = () => {
         </section>
       </section>
 
-      {/* center section */}
+      {/* finish left section */}
+
+      {/* start center section */}
       <section className={styles.centerSection}>
         <a href="">
           <img src={logoIcon} alt="" />
         </a>
       </section>
 
-      {/* right section */}
+      {/* finish center section */}
+
+      {/* start right section */}
       <section className={styles.rightSection}>
         <section>
           <input
@@ -42,13 +46,17 @@ const Header = () => {
         </section>
 
         <section>
-          <label htmlFor="theme">Theme:</label>
-          <select name="theme" id="theme">
+          <label className={styles.chooseThemeLable} htmlFor="theme">
+            {/* Theme: */}
+          </label>
+          <select className={styles.chooseThemeSelect} name="theme" id="theme">
             <option value="dark">Dark</option>
             <option value="light">Light</option>
           </select>
         </section>
       </section>
+
+      {/* finish right section */}
     </header>
   );
 };

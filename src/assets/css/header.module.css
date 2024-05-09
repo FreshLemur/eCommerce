@@ -45,7 +45,6 @@
   background-color: #45a049;
 }
 
-/* Стилі для кнопки Log In */
 .logInButton {
   background-color: var(--blue-background-color);
   border: none;
@@ -105,10 +104,41 @@
 }
 
 .search:focus {
-  outline: none; /* Видаляє синій обведений контур, який може з'явитися за замовчуванням у деяких браузерах */
-  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5); /* Додає тінь навколо елементу при фокусі */
-  border: 2px solid var(--blue-background-color); /* Задає товщину та колір рамки */
-  border-radius: 50px; /* Заокруглює кути рамки */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+  border: 2px solid var(--blue-background-color);
+  border-radius: 50px;
+}
+
+.chooseThemeLable {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.chooseThemeSelect {
+  width: 5vw;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.chooseThemeSelect > option[value="dark"] {
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+.chooseThemeSelect > option[value="dark"]:hover {
+  background-color: #000000;
+}
+
+.chooseThemeSelect > option[value="light"] {
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
 }
 
 /* Finish Right Section */
