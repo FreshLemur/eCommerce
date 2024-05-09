@@ -1,0 +1,114 @@
+:root {
+  --blue-background-color: #008cba;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Start Left Section */
+
+.leftSection {
+  width: 33.33vw;
+  display: flex;
+  align-items: center;
+}
+
+.phoneNumberLeftSection {
+  display: flex;
+  align-items: center;
+}
+
+.phoneNumberLeftSection > * {
+  display: inline;
+  margin: 0.5vw;
+}
+
+.signUpButton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.signUpButton:hover {
+  background-color: #45a049;
+}
+
+/* Стилі для кнопки Log In */
+.logInButton {
+  background-color: var(--blue-background-color);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s;
+}
+
+.logInButton:hover {
+  background-color: #0073e6;
+}
+
+/* Finish Left Section */
+
+/* Start Center Section */
+
+.centerSection {
+  display: flex;
+  justify-content: center;
+  width: 33.33vw;
+}
+
+/* Finish Center Section */
+
+/* Start Right Section */
+
+.rightSection {
+  display: flex;
+  width: 33.33vw;
+  display: flex;
+  align-items: center;
+}
+
+.rightSection > section {
+  margin: 15px;
+}
+
+.search {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("../svg/searchIcon.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.search:focus {
+  outline: none; /* Видаляє синій обведений контур, який може з'явитися за замовчуванням у деяких браузерах */
+  box-shadow: 0 0 5px rgba(0, 115, 230, 0.5); /* Додає тінь навколо елементу при фокусі */
+  border: 2px solid var(--blue-background-color); /* Задає товщину та колір рамки */
+  border-radius: 50px; /* Заокруглює кути рамки */
+}
+
+/* Finish Right Section */
