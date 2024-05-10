@@ -2,4 +2,5 @@
   height: 12vh;
   max-height: 12vh;
   border-top: 1px solid rgba(0, 0, 0, 0.295);
+  box-sizing: border-box;
 }

@@ -1,4 +1,15 @@
+:root {
+  --blue: #008cba;
+}
+
 .MainWrapper {
   height: 76vh;
   max-height: 76vh;
+  display: flex;
+  justify-content: center;
+}
+
+.categoriesTitle {
+  color: var(--blue);
+  margin-top: 1.5vh;
 }
