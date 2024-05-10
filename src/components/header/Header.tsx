@@ -1,6 +1,7 @@
-import styles from "../assets/css/header.module.css";
-import logoIcon from "../assets/svg/logoIcon.svg";
-import phoneIcon from "../assets/svg/phoneIcon.svg";
+import styles from "../../assets/css/header.module.css";
+import logoIcon from "../../assets/svg/logoIcon.svg";
+import phoneIcon from "../../assets/svg/phoneIcon.svg";
+import DropDownListWrapper from "./DropDownListWrapper";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
           <ul>
             <li>
               <a href="" className={styles.phoneNumberLeftSection}>
-                <img src={phoneIcon} alt="" />
+                <img className={styles.phoneIcon} src={phoneIcon} alt="" />
                 <p>+1234567890</p>
               </a>
             </li>
@@ -46,13 +47,7 @@ const Header = () => {
         </section>
 
         <section>
-          <label className={styles.chooseThemeLable} htmlFor="theme">
-            {/* Theme: */}
-          </label>
-          <select className={styles.chooseThemeSelect} name="theme" id="theme">
-            <option value="dark">Dark</option>
-            <option value="light">Light</option>
-          </select>
+          <DropDownListWrapper />
         </section>
       </section>
 
