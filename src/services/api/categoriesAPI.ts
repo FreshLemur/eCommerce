@@ -1,6 +1,6 @@
 const fetchCategories = async () => {
   try {
-    const res = await fetch("https://api.escuelajs.co/api/v1/categories");
+    const res = await fetch("https://fakestoreapi.com/products/categories");
     const data = await res.json();
     console.log(data);
     return data;
